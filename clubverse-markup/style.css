@@ -1,5 +1,7 @@
 :root {
     --primary-color: #004E78;
+    --background: #FFFFFF;
+    --secondary-background: #EFEFEF;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
@@ -11,8 +13,10 @@
 
 body {
     font-family: 'Chivo', sans-serif;
-
+   
 }
+
+
 
 .main-main {
     width: 100%;
@@ -135,16 +139,20 @@ body {
 .main-wrapper .main-right .main-img-ylw {
 
     height: 296px;
-    width: 503px;
+    width: 296px;
     position: absolute;
+    object-fit: cover;
+    object-position: center;
     top: 104px;
     left: 3px;
 }
 .main-wrapper .main-right .main-img-blue {
 
     height: 296px;
-    width: 503px;
+    width: 296px;
     position: absolute;
+    object-fit: cover;
+    object-position: center;
     top: 100px;
 }
 
@@ -197,4 +205,73 @@ body {
 
 .main-text-side p {
     text-overflow: clip;
+}
+
+
+/*footer */
+footer {
+
+    display: flex;
+    justify-content: center;
+    background-color: #EFEFEF;
+    color: var(--primary-color);
+}
+
+.footer-wrapper {
+    max-width: 700px;
+    padding: 10px;
+}
+
+.general-links, .resources-links {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+footer h3 {
+    text-align: center;
+    padding: 20px;
+    font-weight: 700;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 400;
+
+}
+
+.footer-logo-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    margin-bottom: 10px;
+    max-height: 102px;
+}
+
+.footer-logo div {
+    height: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px;
+}
+
+.footer-logo div h1 {
+
+}
+
+.footer-logo img {
+    height: 102px;
+    width: 102px;
+    object-fit: cover;
+    object-position: center;
 }
