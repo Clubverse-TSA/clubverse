@@ -117,29 +117,7 @@ body {
 
 }
 
-@media (max-height: 870px) {
-    .club-header-wrapper {
-        height: 65px;
-    }
 
-    .club-header-left {
-        display: flex;
-        gap: 40px;
-        align-items: flex-end;
-    }
-
-    .club-header-left h2 {
-        padding-bottom: 0px !important; 
-    }
-
-    .club-header-nav {
-        padding-top: 0px !important;
-    }
-
-    .club-main {
-        height: calc(100vh - 165px);
-    }
-}
 
 .club-header {
     display: flex;
